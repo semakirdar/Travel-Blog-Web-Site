@@ -13,7 +13,8 @@ namespace Travel_Trip_Web_Sitesi.Models.Siniflar
         public string KullaniciAdi { get; set; }
         public string Mail { get; set; }
         public string Yorum { get; set; }
-        public Blog Blog { get; set; } //blogdan gelen bir şeyi tutuyor
+        public int Blogid { get; set; }
+        public virtual Blog Blog { get; set; } //blogdan gelen bir şeyi tutuyor
         //bir yorum sadece bir blog için geçerlidir
     }
 }
