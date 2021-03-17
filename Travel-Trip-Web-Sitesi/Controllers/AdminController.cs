@@ -10,6 +10,7 @@ namespace Travel_Trip_Web_Sitesi.Controllers
     {
         // GET: Admin
         Context c = new Context();
+        [Authorize]
         public ActionResult Index()
         {
             var degerler = c.Blogs.ToList();
