@@ -37,5 +37,10 @@ namespace Travel_Trip_Web_Sitesi.Controllers
             }
            
         }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login","GirisYap");
+        }
     }
 }
